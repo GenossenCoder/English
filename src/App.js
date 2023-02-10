@@ -1,3 +1,4 @@
+import React, {useState} from 'react'
 import Header from './components/Header'
 import {Text1, Text2, PickUp, Agathe, DiCaprio, Zendaya, Kadash} from './components/Text'
 import Image from './images/Sample.jpg'
@@ -9,11 +10,22 @@ import {GiThreeFriends} from 'react-icons/gi';
 
 
 function App() {
+  const [Agree, Setagree] = useState(true)
   return (
     <div className="App font-serif mr-2 ml-2">
+
       <div className='flex justify-center'><img src={Logo} alt="" className='w-24'/></div>
       <Header/>
       <div className='grid grid-cols-3 grid-flow-row-3 h-full mt-3'>
+      {Agree&&<div className='absolute w-full h-screen flex justify-center items-center backdrop-blur-xl'>
+      <div className=' bg-white relative w-1/3 h-1/3'>
+        <h1 className='text-center text-2xl font-bold underline p-2 font-sans'>We will sell your Data. Alright?</h1>
+        <div className='flex justify-around p-5'>
+          <button className='p-5 bg-red-600 rounded-sm w-1/3 text-white outline-none' onClick={()=>Setagree(false)}>Yes</button>
+          <button className='p-5  bg-red-600 rounded-sm w-1/3 text-white outline-none' onClick={()=>Setagree(false)}>Yes, of course</button>
+        </div>
+      </div>  
+      </div>}
         <div className=' col-span-2 m-2 p-2'>
           <h1 className=' border-b-2 border-black font-bold pl-2 text-xl'>DiCaprios new girlfriend!</h1>
           <div className='grid grid-cols-3'>
@@ -35,12 +47,13 @@ function App() {
         <div className=' col-span-2 m-2 p-2'>
           <h1 className=' border-b-2 border-black font-bold pl-2 text-xl'>Drama with the Kardashians</h1>
           <div className='grid grid-cols-6 grid-rows-1'>
-            <img src={Image2} alt="" className='w-full p-2 col-span-3'/>
+            <div className='w-full p-2 col-span-3'><img src={Image2} alt="" className='w-full'/>
+            <a className='col-span-3 text-xs ml-2' href="https://i.dailymail.co.uk/i/pix/2017/08/31/15/43BFE41000000578-0-image-a-18_1504188970741.jpg">Image source: https://i.dailymail.co.uk/i/pix/2017/08/31/15/43BFE41000000578-0-image-a-18_1504188970741.jpg</a>
+            </div>
             <div className='break-words col-span-3 row-span-1 text-justify'>
               <div>{Kadash}</div>
               <a href="/" className='underline font-bold'>Click here for Page 2</a>
             </div>
-            <a className='col-span-3 text-xs ml-2' href="https://i.dailymail.co.uk/i/pix/2017/08/31/15/43BFE41000000578-0-image-a-18_1504188970741.jpg">Image source: https://i.dailymail.co.uk/i/pix/2017/08/31/15/43BFE41000000578-0-image-a-18_1504188970741.jpg</a>
           </div>
           
         </div>
