@@ -58,7 +58,7 @@ function App() {
           
         </div>
         <div className='border-l-4 border-black p-2 m-2 '>
-        <h1 className=' border-b-2 border-black font-bold text-xl'>Agathe looing for the love of her life</h1>
+        <h1 className=' border-b-2 border-black font-bold text-xl'>Agathe looking for the love of her life</h1>
         <div>
             <div className='text-justify'>{Agathe}</div>
             <a href="/" className='font-bold underline'>Click here for Page 7...</a>
