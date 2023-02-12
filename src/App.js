@@ -58,7 +58,7 @@ function App() {
           
         </div>
         <div className='border-l-4 border-black p-2 m-2 '>
-        <h1 className=' border-b-2 border-black font-bold text-xl'>Agathe (73) searching for the love of her life</h1>
+        <h1 className=' border-b-2 border-black font-bold text-xl'>Agathe looing for the love of her life</h1>
         <div>
             <div className='text-justify'>{Agathe}</div>
             <a href="/" className='font-bold underline'>Click here for Page 7...</a>
@@ -74,15 +74,15 @@ function App() {
                 </div>
                 <div  className='flex flex-row justify-center'>
                   <BiShoppingBag size={50}/>
-                  <div className='font-bold text-center p-5 w-1/2  bg-red-700 rounded-full text-white hover:animate-pulse'><h1>98%</h1></div>
+                  <div className='font-bold text-center p-5 w-1/2  bg-red-700 rounded-full text-white hover:animate-pulse'><h1>37%</h1></div>
                 </div>
                 <div  className='flex flex-row justify-center'>
                   <BiMoney size={50}/>
-                  <div className='font-bold text-center p-5 w-1/2  bg-red-700 rounded-full text-white hover:animate-pulse'><h1>98%</h1></div>
+                  <div className='font-bold text-center p-5 w-1/2  bg-red-700 rounded-full text-white hover:animate-pulse'><h1>52%</h1></div>
                 </div>
                 <div  className='flex flex-row justify-center'>
                   <GiThreeFriends size={50}/>
-                  <div className='font-bold text-center p-5 w-1/2  bg-red-700 rounded-full text-white hover:animate-pulse'><h1>98%</h1></div>
+                  <div className='font-bold text-center p-5 w-1/2  bg-red-700 rounded-full text-white hover:animate-pulse'><h1>12%</h1></div>
                 </div>
             </div>
             <div><a a href="/" className='font-bold underline'>Get yout weekly horoscope on Page 9...</a></div>
