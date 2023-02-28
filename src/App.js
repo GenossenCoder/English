@@ -66,7 +66,7 @@ function App() {
         </div>
         <div className='col-span-3 flex flex-row'>
           <div className=' w-full border-r-4 m-2 border-black pr-2'>
-            <h1 className=' border-b-2 border-black font-bold text-xl'>Horoscope of the week!</h1>
+            <h1 className=' border-b-2 border-black font-bold text-xl'>Horoscope of the week for pisces!</h1>
             <div className='grid grid-rows-2 grid-cols-2 p-4 gap-2'>
                 <div className='flex flex-row justify-center'>
                   <FiHeart size={50}/>
