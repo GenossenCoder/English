@@ -19,7 +19,7 @@ function App() {
       <div className='grid grid-cols-3 grid-flow-row-3 h-full mt-3'>
       {Agree&&<div className='absolute w-full h-screen flex justify-center items-center backdrop-blur-xl'>
       <div className=' bg-white relative w-1/3 h-1/3'>
-        <h1 className='text-center text-2xl font-bold underline p-2 font-sans'>We will sell your Data. Alright?</h1>
+        <h1 className='text-center text-2xl font-bold underline p-2 font-sans'>We will sell your data. Alright?</h1>
         <div className='flex justify-around p-5'>
           <button className='p-5 bg-red-600 rounded-sm w-1/3 text-white outline-none' onClick={()=>Setagree(false)}>Yes</button>
           <button className='p-5  bg-red-600 rounded-sm w-1/3 text-white outline-none' onClick={()=>Setagree(false)}>Yes, of course</button>
